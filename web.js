@@ -128,7 +128,7 @@
           random: seedRandom(pubDate.unix())
         }),
         url: `http://example.com/test/${pubDate.format('X')}`,
-        author: 'John Smith',
+        author: 'Delzon Perez',
         date: pubDate.clone().toDate()
       });
       pubDate = pubDate.subtract(interval, unit);
