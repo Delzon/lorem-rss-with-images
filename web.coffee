@@ -195,7 +195,7 @@ app.get '/feed', (request, response) ->
     for i in [0...10]
         feed.item {
             title: "Lorem ipsum #{pubDate.format()}",
-            description: loremIpsum(
+            description: "Holi"+loremIpsum(
                 random: seedRandom(pubDate.unix())
             )
             url: "http://example.com/test/#{pubDate.format('X')}"
