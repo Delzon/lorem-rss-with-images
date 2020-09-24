@@ -124,7 +124,7 @@
     for (i = j = 0; j < 10; i = ++j) {
       feed.item({
         title: `Lorem ipsum ${pubDate.format()}`,
-        description: '<img src="https://picsum.photos/300/500"/></br>'+loremIpsum({
+        description: '<img src="https://picsum.photos/300/500" width="300" height="500"/></br>'+loremIpsum({
           random: seedRandom(pubDate.unix())
         }),
         url: `http://example.com/test/${pubDate.format('X')}`,
